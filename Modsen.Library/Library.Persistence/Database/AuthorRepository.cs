@@ -1,3 +1,4 @@
+using Library.Application.Exceptions;
 using Library.Domain.Data;
 namespace Library.Persistence.Database
 {
@@ -12,12 +13,11 @@ namespace Library.Persistence.Database
         
         public Author GetAuthorById(Guid _id)
         {
-            return context.authors.Single(x => x.AuthorId == _id);
+            return context.authors.SingleOrDefault(x => x.AuthorId == _id) ?? throw new NotFoundException();
         }
        
         public Author GetAuthorByName(string _FirstName, string _LastName)
         {
-            //private string authorName = _FirstName + " " + _LastName;
             return context.authors.Single(x => x.FirstName == _FirstName && x.LastName == _LastName);
         }
        
@@ -41,5 +41,9 @@ namespace Library.Persistence.Database
                 context.authors.Remove(GetAuthorById(_AuthorId));
             }
         }
+        /*
+         * TODO:
+         * Remove if statements and replace them with throw(exception)
+         */
     }
 }

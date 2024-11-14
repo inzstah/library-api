@@ -34,7 +34,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
-    <ProjectReference Include="..\Library.Inftastructure\Library.Inftastructure.csproj" />
+    <ProjectReference Include="..\Library.Infrastructure\Library.Infrastructure.csproj" />
     <ProjectReference Include="..\Library.Persistence\Library.Persistence.csproj" />
   </ItemGroup>
 

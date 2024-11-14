@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Domain", "..\Librar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Persistence", "..\Library.Persistence\Library.Persistence.csproj", "{1E598FE0-EC96-4E1D-BD02-206CEC93DD95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Inftastructure", "..\Library.Inftastructure\Library.Inftastructure.csproj", "{D6D30B2A-BFD0-4DA5-B285-C49136FAFF03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Infrastructure", "..\Library.Infrastructure\Library.Infrastructure.csproj", "{D6D30B2A-BFD0-4DA5-B285-C49136FAFF03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

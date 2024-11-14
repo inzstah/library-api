@@ -92,7 +92,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseCors("AllowOrigin");
-app.UseCustomExceptionHandler();
+app.UseMiddlewares();
 
 app.UseHttpsRedirection();
 
