@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PcLUytNq5G0=",
+  "dgSpecHash": "mmHznvv7JZqGrrUvpdcYqeM4YnBQwv04xzbbIzrUXboWW3nvLuN4WTZ9a3wAsHJIIiYhZW1kGg0qUf9tr4mhbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj",
+  "projectFilePath": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cerra\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
     "C:\\Users\\Cerra\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.4\\microsoft.aspnet.identity.core.2.2.4.nupkg.sha512",

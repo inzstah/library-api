@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.API\\Library.csproj": {}
+    "D:\\library-api\\Modsen.Library\\Library.API\\Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.API\\Library.csproj": {
+    "D:\\library-api\\Modsen.Library\\Library.API\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.API\\Library.csproj",
+        "projectUniqueName": "D:\\library-api\\Modsen.Library\\Library.API\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.API\\Library.csproj",
+        "projectPath": "D:\\library-api\\Modsen.Library\\Library.API\\Library.csproj",
         "packagesPath": "C:\\Users\\Cerra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.API\\obj\\",
+        "outputPath": "D:\\library-api\\Modsen.Library\\Library.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cerra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,14 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj"
               },
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Inftastructure\\Library.Inftastructure.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Inftastructure\\Library.Inftastructure.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Infrastructure\\Library.Infrastructure.csproj"
               },
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\Library.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\Library.Persistence.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj"
               }
             }
           }
@@ -42,11 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -145,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj": {
+    "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj",
+        "projectUniqueName": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj",
         "projectName": "Library.Application",
-        "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj",
+        "projectPath": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj",
         "packagesPath": "C:\\Users\\Cerra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\obj\\",
+        "outputPath": "D:\\library-api\\Modsen.Library\\Library.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cerra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -167,8 +162,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj"
               }
             }
           }
@@ -177,11 +172,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -229,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj": {
+    "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj",
+        "projectUniqueName": "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj",
         "projectName": "Library.Domain",
-        "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj",
+        "projectPath": "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj",
         "packagesPath": "C:\\Users\\Cerra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\obj\\",
+        "outputPath": "D:\\library-api\\Modsen.Library\\Library.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cerra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -257,11 +247,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -287,14 +272,14 @@
         }
       }
     },
-    "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Inftastructure\\Library.Inftastructure.csproj": {
+    "D:\\library-api\\Modsen.Library\\Library.Infrastructure\\Library.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Inftastructure\\Library.Inftastructure.csproj",
-        "projectName": "Library.Inftastructure",
-        "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Inftastructure\\Library.Inftastructure.csproj",
+        "projectUniqueName": "D:\\library-api\\Modsen.Library\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "projectName": "Library.Infrastructure",
+        "projectPath": "D:\\library-api\\Modsen.Library\\Library.Infrastructure\\Library.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Cerra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Inftastructure\\obj\\",
+        "outputPath": "D:\\library-api\\Modsen.Library\\Library.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cerra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -309,8 +294,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj"
               }
             }
           }
@@ -319,11 +304,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -349,14 +329,14 @@
         }
       }
     },
-    "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\Library.Persistence.csproj": {
+    "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\Library.Persistence.csproj",
+        "projectUniqueName": "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
         "projectName": "Library.Persistence",
-        "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\Library.Persistence.csproj",
+        "projectPath": "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
         "packagesPath": "C:\\Users\\Cerra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\obj\\",
+        "outputPath": "D:\\library-api\\Modsen.Library\\Library.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cerra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -371,11 +351,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Application\\Library.Application.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj"
               },
-              "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj": {
-                "projectPath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Domain\\Library.Domain.csproj"
+              "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj": {
+                "projectPath": "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj"
               }
             }
           }
@@ -384,11 +364,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

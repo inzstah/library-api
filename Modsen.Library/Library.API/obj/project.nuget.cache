@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7IXCyZyY9ls=",
+  "dgSpecHash": "KpjetLP+bq9A9ATKtyaTOjo631p7LzGM0YQD4L944hSUu+t3EBzuZPK8dAujknguNx2MaDMfl+8Lc/WGsefaQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.API\\Library.csproj",
+  "projectFilePath": "D:\\library-api\\Modsen.Library\\Library.API\\Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cerra\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Cerra\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

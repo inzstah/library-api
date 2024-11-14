@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RnJfrPXhAuo=",
+  "dgSpecHash": "rKEtoiHIhmK4OCdz3zlZzdaCpciJq0hX2PsRCYDZ21NGrXr3QtFL/w3E5YT51vj0DJCtDz022SO/Tz6JZiUJ9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cerra\\OneDrive\\Desktop\\Lib\\back\\Library.Persistence\\Library.Persistence.csproj",
+  "projectFilePath": "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cerra\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Cerra\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
