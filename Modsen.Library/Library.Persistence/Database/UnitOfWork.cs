@@ -1,54 +1,42 @@
 ﻿namespace Library.Persistence.Database;
 
-public class UnitOfWork(LibraryDbContext context, BookRepository bRepos, UserRepository uRepos, AuthorRepoisitory aRepos) : IDisposable
+public sealed class UnitOfWork(LibraryDbContext context, BookRepository bRepos, UserRepository uRepos, AuthorRepository aRepos)
+    : IDisposable
 {
-
     private readonly LibraryDbContext context = context;
     private readonly BookRepository bookRepos = bRepos;
     private readonly UserRepository userRepos = uRepos;
-    private readonly AuthorRepoisitory authorRepos = aRepos;
+    private readonly AuthorRepository authorRepos = aRepos;
 
-    public BookRepository books
-    {
-        get
-        {
-            return bookRepos;
-        }
-    }
-    public UserRepository users
-    {
-        get
-        {
-            return userRepos;
-        }
-    }
-    public AuthorRepoisitory authors
-    {
-        get
-        {
-            return authorRepos;
-        }
-    }
+    public BookRepository books => bookRepos;
+    public UserRepository users => userRepos;
+    public AuthorRepository authors => authorRepos;
+
     public async Task SaveAsync()
     {
         await context.SaveChangesAsync();
     }
-    private bool isDisposed = false;
-    public virtual void Dispose(bool disposing)
+
+    private bool isDisposed;
+
+    private void Dispose(bool disposing)
     {
-        if (!this.isDisposed)
+        if (isDisposed)
         {
-            if (disposing)
-            {
-                context.Dispose();
-            }
-            this.isDisposed = true;
+            return;
         }
+
+        if (disposing)
+        {
+            context.Dispose();
+        }
+
+        isDisposed = true;
     }
+
     public void Dispose()
     {
         Dispose(true);
         GC.SuppressFinalize(this);
     }
-
 }

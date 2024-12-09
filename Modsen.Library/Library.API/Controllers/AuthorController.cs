@@ -1,82 +1,57 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Library.Persistence.Database;
-using Library.Application.Pagination;
-using Library.Domain.Data;
-using NUnit.Framework;
-using Microsoft.AspNetCore.Authorization;
+﻿using Library.Domain.Data;
+using Library.Infrastructure.UseCases.Handlers.AuthorHandlers;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Library.API.Structure.Controllers
+namespace Library.Controllers
 {
     [ApiController]
     [Route("[controller]")]
    //[Authorize]
-    public class AuthorController : Controller
+    public class AuthorController(AuthorHandler handler) : Controller
     {
-
-        private readonly UnitOfWork unitOfWork;
-        private readonly IWebHostEnvironment environment;
-        public AuthorController(UnitOfWork unitOfWork, IWebHostEnvironment environment)
-        {
-            this.unitOfWork = unitOfWork;
-            this.environment = environment;
-        }
-        
         [HttpGet("GetAuthorList")]
         public List<Author> GetAllAuthors()
         {
-            return [.. unitOfWork.authors.GetAuthor()];
+            return handler.GetAllAuthors();
         }
 
         [HttpGet("GetAuthorListPaginated")]
         public List<Author> GetAllAuthorsPaginated(int page = 1)
         {
-            List<Author> authors = [.. unitOfWork.authors.GetAuthor()];
-
-            const int pageSize = 5;
-
-            if (page < 1) page = 1;
-            int recsCount = authors.Count();
-            Pager pager = new Pager(recsCount, page, pageSize);
-
-            int recSkip = (page - 1) * pageSize;
-            List<Author> showedData = authors.Skip(recSkip).Take(pager.PageSize).ToList();
-            return showedData;
+            return handler.GetAllAuthorsPaginated(page);
         }
 
         [HttpGet("GetAuthorById")]
         public Author GetAuthorId(Guid id)
         {
-            return unitOfWork.authors.GetAuthorById(id);
+            return handler.GetAuthorId(id);
         }
 
         [HttpGet("GetAuthorByName")]
-        public Author GetAuthorName(string _FirstName, string _LastName)
+        public Author GetAuthorName(string firstName, string lastName)
         {
-            return unitOfWork.authors.GetAuthorByName(_FirstName, _LastName);
+            return handler.GetAuthorName(firstName, lastName);
         }
         
         [HttpPost("AddAuthor")]
         //[CheckAdmin]
-        public async Task<string> AddAuthor(Author _Author)
+        public async Task<string> AddAuthor(Author author)
         {
-            unitOfWork.authors.AddAuthor(_Author);
-            await unitOfWork.SaveAsync();
-            return "OK";
+            
+            return await handler.AddAuthor(author);;
         }
 
 
-        [HttpPost("EditAuthor")]
-        public async Task EditAuthor(Author newAuthor)
+        [HttpPost("UpdateAuthor")]
+        public async Task UpdateAuthor(Author newAuthor)
         {
-            unitOfWork.authors.EditAuthor(newAuthor);
-            await unitOfWork.SaveAsync();
+            await handler.UpdateAuthor(newAuthor);
         }
 
         [HttpDelete("DeleteAuthor")]
-        public async Task DeleteAuthor(Guid AuthorId)
+        public async Task DeleteAuthor(Guid authorId)
         {
-            unitOfWork.authors.DeleteAuthor(AuthorId);
-            await unitOfWork.SaveAsync();
+            await handler.DeleteAuthor(authorId);
         }
     }
 }

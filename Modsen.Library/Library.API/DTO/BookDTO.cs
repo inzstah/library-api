@@ -1,7 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-namespace Library.API.DTO
+﻿namespace Library.DTO
 {
-    public class BookDTO
+    public class BookDto
     {
         public Guid BookId { get; set; }
         public int Isbn { get; set; }

@@ -1,13 +1,14 @@
 ﻿using AutoMapper;
 using Library.Domain.Data;
-namespace Library.API.DTO
+
+namespace Library.DTO
 {
     public class MyProfile : Profile
     {
         public MyProfile() {
-            CreateMap<User, UserDTO>();
-            CreateMap<Book, BookDTO>();
-            CreateMap<Author, AuthorDTO>();
+            CreateMap<User, UserDto>();
+            CreateMap<Book, BookDto>();
+            CreateMap<Author, AuthorDto>();
         }
     }
 }

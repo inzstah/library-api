@@ -74,7 +74,7 @@ builder.Services.AddDbContext<LibraryDbContext>(x => x.UseSqlServer(
     b => b.MigrationsAssembly("Library")));
 builder.Services.AddScoped<BookRepository>();
 builder.Services.AddScoped<UserRepository>();
-builder.Services.AddScoped<AuthorRepoisitory>();
+builder.Services.AddScoped<AuthorRepository>();
 builder.Services.AddScoped<UnitOfWork>();
 builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
 

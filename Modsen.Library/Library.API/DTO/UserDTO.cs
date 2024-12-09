@@ -1,7 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-namespace Library.API.DTO
+﻿namespace Library.DTO
 {
-    public class UserDTO
+    public class UserDto
     {
         public Guid UserId { get; set; }
         public string Email { get; set; }

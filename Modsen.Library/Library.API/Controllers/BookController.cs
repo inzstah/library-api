@@ -1,108 +1,68 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Library.Persistence.Database;
-using Library.Application.Pagination;
-using Library.Domain.Data;
-using NUnit.Framework;
-using Microsoft.AspNetCore.Authorization;
+﻿using Library.Domain.Data;
+using Library.Infrastructure.UseCases.Handlers.BookHandlers;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Library.API.Structure.Controllers
+namespace Library.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     //[Authorize]
-    public class BookController : Controller
+    public class BookController(BookHandler handler, IWebHostEnvironment environment) : Controller
     {
-
-        private readonly UnitOfWork unitOfWork;
-        private readonly IWebHostEnvironment environment;
-        public BookController(UnitOfWork unitOfWork, IWebHostEnvironment environment)
-        {
-            this.unitOfWork = unitOfWork;
-            this.environment = environment;
-        }
-        
         [HttpGet("GetBookList")]
         public List<Book> GetAllBooks()
         {
-            return [.. unitOfWork.books.GetBooks()];
+            return handler.GetAllBooks();
         }
 
         [HttpGet("GetBookListPaginated")]
         public List<Book> GetAllBooksPaginated(int page = 1)
         {
-            List<Book> Books = [.. unitOfWork.books.GetBooks()];
-
-            const int pageSize = 5;
-
-            if (page < 1) page = 1;
-            int recsCount = Books.Count();
-            Pager pager = new Pager(recsCount, page, pageSize);
-
-            int recSkip = (page - 1) * pageSize;
-            List<Book> showedData = Books.Skip(recSkip).Take(pager.PageSize).ToList();
-            return showedData;
+            return handler.GetAllBooksPaginated(page);
         }
 
         [HttpGet("GetBookById")]
         public Book GetBookId(Guid id)
         {
-            return unitOfWork.books.GetBookById(id);
+            return handler.GetBookId(id);
         }
 
         [HttpGet("GetBookByName")]
-        public Book GetBookName(string Name)
+        public Book GetBookName(string name)
         {
-            return unitOfWork.books.GetBookByName(Name);
+            return handler.GetBookName(name);
         }
-        
+
         [HttpPost("AddBook")]
         //[CheckAdmin]
-        public async Task<string> AddBook(Book _Book)
+        public async Task<string> AddBook(Book book)
         {
-            unitOfWork.books.AddBook(_Book);
-            await unitOfWork.SaveAsync();
-
+            await handler.AddBook(book);
             return "OK";
         }
 
         [HttpPost("UploadImage")]
-        public async Task<string> UploadImage(IFormFile file)
+        public async Task<string> UploadImage(string root, IFormFile file)
         {
-            string fileName;
-            if (file != null && file.Length > 0)
-            {
-                fileName = file.FileName;
-                var physPath = environment.ContentRootPath + "/BookCovers/" + file.FileName;
-                using (var stream = new FileStream(physPath, FileMode.Create))
-                {
-                    await file.CopyToAsync(stream);
-                }
-            }
-            else
-            {
-                fileName = "default.png";
-            }
-            return fileName;
+            return await handler.UploadImage(root, file);
         }
 
-        [HttpPost("EditBook")]
-        public async Task EditBook(Book newBook)
+        [HttpPost("UpdateBook")]
+        public async Task UpdateBook(Book newBook)
         {
-            unitOfWork.books.EditBook(newBook);
-            await unitOfWork.SaveAsync();
+            await handler.UpdateBook(newBook);
         }
 
         [HttpGet("GetBooksForThisUser")]
-        public List<Book> GetBooksForThisUser(Guid UserId)
+        public List<Book> GetBooksForThisUser(Guid userId)
         {
-            return unitOfWork.books.GetBooksForThisUser(UserId);
+            return handler.GetBooksForThisUser(userId);
         }
 
         [HttpDelete("DeleteBook")]
-        public async Task DeleteBook(Guid BookId)
+        public async Task DeleteBook(Guid bookId)
         {
-            unitOfWork.books.DeleteBook(BookId);
-            await unitOfWork.SaveAsync();
+            await handler.DeleteBook(bookId);
         }
     }
 }

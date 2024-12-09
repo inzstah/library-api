@@ -1,6 +1,6 @@
-namespace Library.API.DTO
+namespace Library.DTO
 {
-    public class AuthorDTO
+    public class AuthorDto
     {
         public Guid AuthorId { get; set; }
         public string FirstName {get; set; }

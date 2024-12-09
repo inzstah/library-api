@@ -28,7 +28,7 @@ namespace Library.Persistence.Database
             }
         }
         
-        public void EditBook(Book _newBook)
+        public void UpdateBook(Book _newBook)
         {
             context.books.Entry(GetBookById(_newBook.BookId)).CurrentValues.SetValues(_newBook);
         }

@@ -2,7 +2,7 @@ using Library.Application.Exceptions;
 using Library.Domain.Data;
 namespace Library.Persistence.Database
 {
-    public class AuthorRepoisitory(LibraryDbContext context)
+    public class AuthorRepository(LibraryDbContext context)
     {
         private readonly LibraryDbContext context = context;
 
@@ -29,7 +29,7 @@ namespace Library.Persistence.Database
             }
         }
         
-        public void EditAuthor(Author _newAuthor)
+        public void UpdateAuthor(Author _newAuthor)
         {
             context.authors.Entry(GetAuthorById(_newAuthor.AuthorId)).CurrentValues.SetValues(_newAuthor);
         }
