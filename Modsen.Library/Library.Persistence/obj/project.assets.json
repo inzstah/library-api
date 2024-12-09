@@ -11084,11 +11084,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
+      "projectUniqueName": "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
       "projectName": "Library.Persistence",
-      "projectPath": "D:\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
+      "projectPath": "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Persistence\\Library.Persistence.csproj",
       "packagesPath": "C:\\Users\\Cerra\\.nuget\\packages\\",
-      "outputPath": "D:\\library-api\\Modsen.Library\\Library.Persistence\\obj\\",
+      "outputPath": "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cerra\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -11103,11 +11103,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj": {
-              "projectPath": "D:\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj"
+            "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj": {
+              "projectPath": "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Application\\Library.Application.csproj"
             },
-            "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj": {
-              "projectPath": "D:\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj"
+            "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj": {
+              "projectPath": "D:\\dotNetProjects\\library-api\\Modsen.Library\\Library.Domain\\Library.Domain.csproj"
             }
           }
         }
@@ -11116,6 +11116,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11161,7 +11166,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
